@@ -51,7 +51,7 @@ sudo python3 shrenk.py work.img
 
 ### Example session (layout only)
 ```
-$ sudo python3 resize_disk_image.py work.img
+$ sudo python3 shrenk.py work.img
 ... select option 1 ...
 Disk image partition layout (each character ~1.7% of image):
 |11111111111112222222222222222222222222|
