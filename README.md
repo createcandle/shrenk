@@ -46,7 +46,7 @@ In the future this utility could be paired with `raspi-config` inside the image 
 cp original.img work.img
 
 # Display help banner and interactive menu
-sudo python3 resize_disk_image.py work.img
+sudo python3 shrenk.py work.img
 ```
 
 ### Example session (layout only)
