@@ -1,3 +1,5 @@
+![shrenk](/assets/shrenk-001.png)
+
 # Raspberry Pi Disk Image Resizer
 
 Reduce (Shrink) a raw disk image (.img) created with dd or other tools. 
