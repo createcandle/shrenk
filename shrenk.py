@@ -338,34 +338,7 @@ if __name__ == "__main__":
         print("Usage: sudo python3 shrenk.py /path/to/image.img")
         sys.exit(1)
     image_path = sys.argv[1]
-
-    print("\033[32m" +
-        r"""
-⠀⠀⠀⣰⢋⡝⢦⠀⠀⠀⠀⣀⡤⠖⠚⠛⠓⠒⠶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀_____________________________
-⠀⠀⠀⢧⡗⠃⠈⢧⠀⢠⡞⠉⠀⢀⡀⠀⠀⠀⠀⠀⠹⣄⠀⠀⠀⡰⢋⡍⢢⠀/ Sure, it's big enough, but  \ 
-⠀⠀⠀⠀⠉⠙⠓⢄⢱⣯⠖⠟⠿⣦⡀⠉⠉⠀⢀⣤⣤⣘⣆⣀⠜⠁⠈⠓⡸⠀| look at the location.       |
-⠀⠀⠀⠀⠀⠀⠀⢨⠟⢁⡠⣤⣔⠌⣿⠀⠀⣴⡿⢋⡁⠈⢻⣠⠖⠉⠉⠉⠀⠀\_____________________________/
-⠀⠀⠀⠀⠀⠀⢰⠏⠀⠐⠅⣛⠳⡓⢁⣀⡀⢿⡪⠿⠯⣳⠀⢳⡀⠀⠀⠀⠀⠀   |  /
-⠀⠀⠀⠀⠀⠀⡟⠀⠀⠀⢠⠖⢩⠁⠀⠀⠀⠀⠑⢍⠉⠀⠀⠀⢳⠀⠀⠀⠀⠀   | /   
-⠀⠀⠀⢀⡴⢲⠇⠀⢰⡖⠚⠃⠋⠓⢄⣀⡠⠴⠲⠼⢄⡀⠀⠀⢸⡧⣄⠀⠀⠀   |/
-⣀⠤⠖⢉⣠⣾⠀⠀⠀⠈⠲⣄⡀⢐⠀⠀⠈⡆⠀⠀⢀⡠⠓⠄⢸⣇⠘⢦⣀⡀
-⠁⠀⣰⠟⠁⠘⣆⠀⠀⠀⠀⠀⠙⠋⠷⠶⠶⠶⠖⠊⠁⠀⠀⠀⣼⠺⡆⠀⠁⠉
-⠀⢸⡇⠀⠀⠀⠘⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠃⠀⢸⠀⠀⠀
-⠀⠘⣧⡀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠊⠁⠀⠀⡸⠀⠀⠀
-⠀⠀⠱⡑⢄⠀⠀⠀⠀⠀⠉⠓⠦⣄⣀⣀⣀⣠⡤⠞⠉⠀⠀⠀⠀⣰⠃⠀⠀⠀
-        """ + "\033[0m"
-    )
-
-    print(
-        "\n====== Shrenk: A Raspberry Pi Image Resizer ======"
-        "\nThis utility:\n"
-        "  • Displays a compact ASCII map of all partitions in the image.\n"
-        "  • Shrinks the last ext2/3/4 partition to its minimum size plus a 100 MB safety margin,\n"
-        "    updates the partition table accordingly, and truncates the image file to reclaim space.\n"
-        "\nThe image will always be attached read-write via a loop device; make sure you are working\n"
-        "on a copy or have backups. Root privileges are required for all operations.\n"
-    )
-
+  
     while True:
         choice = input(
             "Select an action for the image:\n"
