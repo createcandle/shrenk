@@ -272,7 +272,7 @@ def main(image_path):
 
         # Resize filesystem to target size
         print("Resizing filesystem to target size (minimum + safety margin)...")
-        input ("Press enter to continue...")
+        #input ("Press enter to continue...")
         resize_filesystem(part_dev, target_blocks)
         print("Filesystem resized.")
 
